@@ -5,6 +5,7 @@ Created on Sun Dec  6 16:45:47 2020
 @author: USER
 """
 
+import setup_for_forced_procedures
 import os 
 
 os.chdir("C://Users//USER//Dropbox//Projects//Work on Graphs//gcn-master//gcn-master//gcn")
@@ -15,13 +16,13 @@ from __future__ import print_function
 import time
 import tensorflow as tf
 
-from gcn.utils import *
-from gcn.models import GCN, MLP
+#from gcn.utils import *
+#from gcn.models import GCN, MLP
 
 
 
-from utils import *
-from models import GCN, MLP
+#from utils import *
+#from models import GCN, MLP
 
 # Set random seed
 seed = 123
@@ -30,8 +31,9 @@ tf.set_random_seed(seed)
 
 # Settings
 flags = tf.app.flags
+del FLAGS
 FLAGS = flags.FLAGS
-tflags.DEFINE_string(' string.')  # 'cora', 'citeseer', 'pubmed'
+flags.DEFINE_string('dataset', 'cora', 'Dataset string.')  # 'cora', 'citeseer', 'pubmed'
 flags.DEFINE_string('model', 'gcn', 'Model string.')  # 'gcn', 'gcn_cheby', 'dense'
 flags.DEFINE_float('learning_rate', 0.01, 'Initial learning rate.')
 flags.DEFINE_integer('epochs', 200, 'Number of epochs to train.')
