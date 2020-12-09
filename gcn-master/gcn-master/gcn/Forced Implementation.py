@@ -5,11 +5,11 @@ Created on Sun Dec  6 16:45:47 2020
 @author: USER
 """
 
-import setup_for_forced_procedures
 import os 
 
 os.chdir("C://Users//USER//Dropbox//Projects//Work on Graphs//gcn-master//gcn-master//gcn")
 
+import setup_for_forced_procedures
 from __future__ import division
 from __future__ import print_function
 
