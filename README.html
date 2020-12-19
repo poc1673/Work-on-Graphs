@@ -22,8 +22,18 @@
 </style>
 </head>
 <body><div id="readme" class="container"><article class="markdown-body entry-content"><h1 id="machine-learning-for-graphs">Machine Learning for Graphs</h1>
-<h2 id="purpose-">Purpose:</h2>
+<p>The purpose of this project is to work as my primer on machine learning in networks, with an emphasis on the application of these models for analyzing instances of money laundering or fraud in networks of transactions.</p>
+<p>The focus of this project will be on academic literature and numerical experiments that have been implemented in literature in the past few years. Papers that are deemed as necessary precursors will also be reviewed.</p>
+<p>Implementation will be in Python Tensorflow.</p>
 <h2 id="scope-">Scope:</h2>
+<p>The scope will be a survey of each of the major methodologies used in machine learning for networks. At the time of this assessment (2020-12-19) this will be:</p>
+<ul>
+<li>Graph convolutional neural networks.</li>
+<li>Manifold propogation</li>
+<li>DeepWalk and skip-gram graph embeddings</li>
+<li>More simplistic methodologies such as the logistic regression framework used in earlier papers.</li>
+</ul>
+<p>After reviewing and replicating the above results, a novel approach should be developed using a data-set. It should also be applied to data-sets related to fraud/money laundering networks. This novel implementation should begin with a motivation and derivation of the method, its performance, and a full explanation of how it works.</p>
 <h2 id="final-result-">Final Result:</h2>
 <ol>
 <li>Familiarity with major forms of machine learning for networks.</li>
@@ -100,33 +110,65 @@
 <li>Review of graph convolutional neural networks.</li>
 </ul>
 </li>
-<li><p>Graph embeddings.</p>
+<li><p>Review of graph theory:</p>
+<ul>
+<li>Graph embeddings</li>
+<li>Numerical techniques related to adjacency matrices.</li>
+<li>Convolutions and applications to graph theory.</li>
+</ul>
 </li>
-<li>Review of use of convolutions and graph theory.</li>
+<li><p>Tensorflow refresher with exercises:</p>
+<ul>
 <li>Tensorflow ML exercise #1: Fit nested linear regression.</li>
 <li>Tensorflow ML exercise #2: Fit 2 stage migration matrix model.</li>
-<li><p>Basic visualization/classification tasks on graphs.</p>
+<li>Basic visualization/classification tasks on graphs.</li>
+</ul>
 </li>
-<li><p>Read Link Based Learning - Lu Getoor - 2003</p>
-</li>
+<li><p>Assigned Reading:</p>
+<ul>
+<li>Read Link Based Learning - Lu Getoor - 2003</li>
 <li>Read Hammond paper on spectral graph theory <em>with</em> intention of identifying key points, not completeness.</li>
 <li>Employ simple machine learning on the graph structure to try to group data.</li>
+</ul>
+</li>
 </ul>
 <h3 id="week-2-">Week 2:</h3>
 <ol>
 <li>Read Semi-Supervised Classification on Graph Convolutional Networks - Kipf Welling - 2017.</li>
 <li>Replicate their results using Tensorflow 2.0 (original implementation used earlier version).</li>
+<li>(If possible) Implement custom functions for GCNN using Tensorflow.</li>
 </ol>
 <h3 id="week-3-">Week 3:</h3>
 <h3 id="week-4-">Week 4:</h3>
+<ol>
+<li>Read DeepWalk Online Learning of Social Representations - Perozzi et al - 2014.</li>
+<li>Attempt to replicate the results from DeepWalk using Tensorflow.</li>
+<li>(If possible) Implement DeepWalk Online Learning of Social Representations - Perozzi et al - 2014</li>
+</ol>
 <h3 id="week-5-">Week 5:</h3>
+<ul>
+<li>Read FASTCGN implementation paper.</li>
+<li>Implement changes from FASTCGN onto original GCNN functions to create fast versions.</li>
+<li>Attempt to replicate results from both papers.</li>
+</ul>
 <h3 id="week-6-">Week 6:</h3>
+<p>To reassess steps.</p>
 <h3 id="week-7-">Week 7:</h3>
 <p>Ending: 2021-02-28</p>
 <h2 id="resources">Resources</h2>
 <h3 id="graph-theory">Graph Theory</h3>
 <h3 id="deep-learning">Deep Learning</h3>
+<ol>
+<li><a href="https://www.tensorflow.org/guide/effective_tf2">Tensorflow 2.0 Website</a></li>
+<li><a href="http://www.aicheatsheets.com/static/pdfs/tensorflow_v_2.0.pdf">Tensorflow cheat sheet</a></li>
+<li><a href="https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438/ref=sr_1_1?dchild=1&amp;keywords=francois+chollet&amp;qid=1608392039&amp;sr=8-1">Deep Learning with Python</a></li>
+<li><a href="https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646/ref=sr_1_3?dchild=1&amp;keywords=francois+chollet&amp;qid=1608392039&amp;sr=8-3">Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems</a></li>
+</ol>
 <h2 id="data-sets">Data-sets</h2>
+<ol>
+<li><a href="http://networkrepository.com/soc-karate.php">Karate club data-set</a></li>
+<li><a href="https://www.kaggle.com/ellipticco/elliptic-data-set">Elliptic data-set</a></li>
+</ol>
 </article></div><div style="background-color: #b4b2b2;width: 50px;height:50px;line-height: 50px;text-align: center;position: fixed;bottom: 10px;right: 10px;padding-top:5px;" onclick="document.documentElement.scrollTop = document.body.scrollTop =0;">
   <svg t="1533629773982" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1035" xlink="http://www.w3.org/1999/xlink" width="40" height="40"><defs><style type="text/css">@font-face { font-family: uc-nexus-iconfont; src: url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff") format("woff"), url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf") format("truetype"); }
   </style></defs><path d="M536.255427 195.182354c-7.804756-7.804756-17.966187-11.615549-28.311813-11.615549-9.43693 0-18.874883 3.449565-26.496467 10.163477-2.360767 1.452071-4.356214 3.267417-6.352685 5.262864L218.47792 455.611735c-15.607466 15.60542-15.607466 40.834011 0 56.43943 15.607466 15.607466 41.558511 15.607466 57.167001 0l193.46013-192.733583 0 600.526219c0 22.1423 17.787108 39.927361 39.927361 39.927361 22.140253 0 39.927361-17.785062 39.927361-39.927361L548.959773 319.317583 737.15704 508.422522c15.607466 15.607466 40.469714 15.607466 56.078203 0 15.607466-15.607466 15.425318-40.834011-0.182149-56.441477L536.255427 195.182354 536.255427 195.182354z" p-id="1036" fill="#333"/><path d="M101.784174 143.097092l816.674071 0c22.140253 0 39.925315-17.785062 39.925315-39.927361 0-22.140253-17.784038-39.925315-39.925315-39.925315L101.784174 63.244416c-22.140253 0-39.927361 17.785062-39.927361 39.925315C61.856813 125.31203 79.643921 143.097092 101.784174 143.097092L101.784174 143.097092z" p-id="1037" fill="#333"/></svg>
