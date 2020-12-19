@@ -24,14 +24,26 @@
 
 ### Week 1:
 
-* Review of adjacency matrices.
-* Graph embeddings.
-* Tensorflow ML exercise #1: Fit nested linear regression.
-* Tensorflow ML exercise #2: Kullback Leibler divergence to fit default.
-* Basic classification tasks on 
+* Review theory for neural networks:
+ + Basic principles of neural networks.
+ + Structure of networks (RNN, et cetera).
+ + Review of graph convolutional neural networks.
 
+* Graph embeddings.
+* Review of use of convolutions and graph theory.
+* Tensorflow ML exercise #1: Fit nested linear regression.
+* Tensorflow ML exercise #2: Fit 2 stage migration matrix model.
+* Basic visualization/classification tasks on graphs.
+
+* Read Link Based Learning - Lu Getoor - 2003
+* Read Hammond paper on spectral graph theory *with* intention of identifying key points, not completeness.
+* Employ simple machine learning on the graph structure to try to group data.
 
 ### Week 2:
+
+1. Read Semi-Supervised Classification on Graph Convolutional Networks - Kipf Welling - 2017.
+2. Replicate their results using Tensorflow 2.0 (original implementation used earlier version).
+
 
 ### Week 3:
 

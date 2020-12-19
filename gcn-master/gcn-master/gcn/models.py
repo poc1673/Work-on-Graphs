@@ -1,6 +1,6 @@
 from gcn.layers import *
 from gcn.metrics import *
-
+import tensorflow.compat.v1 as tf
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 
