@@ -1,0 +1,46 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fourier}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Peter Caya}
+\title{Notes on Link Based Learning}
+\begin{document}
+
+Problem Description: Classify a network based on the text and associated features with them.
+
+
+Unique problems:
+\begin{itemize}
+\item Each iteration of the algorithm will reassess the classification of each node in a graph. However, the classification of each of its neighbors must be reassessed as a result of it.
+\item The coding for the neighbors of each node. In this case, we are working with digraphs where there are incoming and outgoing links.  
+\item How to train a model; Do you train it on the features of the links (that aren't related to the network while at the same time using the link information, or do you use some other framework?
+\end{itemize}
+
+
+The nodes can be coded as one of the following:
+
+\begin{itemize}
+\item Calculate the mode from each set of linked objects using the in-links, out-links. This is a \textbf{mode-link} model.
+\item Use the frequency of the categories of the linked objects; This is \textbf{count-link}.
+\item Define a binary feature where, if there is a link to an object of a specific category, the feature is 1. If not, it is 0. This is a \textbf{binary-link} model.
+\end{itemize}
+
+
+Modeling strategies:
+
+The authors utilized logistic regression to try to predict the outcomes. In this case, they had two main strategies that they tested:
+
+\begin{itemize}
+\item "Flat" models; The non-link features of the data and the link features were included together as factors in a one-stage regression. 
+\item A two stage model which first classifies each node based only on the object information (features). After this initial prediction, the link based logistic regression is then fit for each node. This stopping criteria for fitting the model is when the link classifications no longer change.
+\end{itemize}
+
+The authors found that the two-stage model outperformed the flat model.
+
+
+
+\end{document}
