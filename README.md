@@ -25,15 +25,15 @@ After reviewing and replicating the above results, a novel approach should be de
 
 ## Timeline:
 
-| Week # | Begin Date | End Date | Topic | Items Due |   
-|------------|------------|----------|-------|-----------|
-| 1|  2020-12-19        |         | Graph theory/Tensorflow review      |           |   
-| 2|  2020-12-25          |          | Convolutional neural networks and graph theory      |           |   
-| 3|  2021-01-02          |          |    Manifold propogation   |           |   
-| 4|  2021-01-10          |          |  Skip-gram graph embeddings (DeepWalk)     |           |   
-| 5|  2021-01-18          |          |   FAST CGN Replication    |           |   
-|6|  2021-01-26          |          | Create novel model.       |           |   
-|7 | 2021-02-02          |          | Generate writeup on results.       |           |
+| Week # | Begin Date | Topic | Items Due |   
+|------------|----------------------|-------|-----------|
+| 1|  2021-01-10         |         | Graph theory/Tensorflow review      |           |   
+| 2|  2021-01-18         |          | Convolutional neural networks and graph theory      |           |   
+| 3|  2021-01-26          |          |    Manifold propogation   |           |   
+| 4|  2021-02-02          |          |  Skip-gram graph embeddings (DeepWalk)     |           |   
+| 5|  2021-02-10          |          |   FAST CGN Replication    |           |   
+|6|  2021-02-18          |          | Create novel model.       |           |   
+|7 | 2021-02-26          |          | Generate writeup on results.       |           |
 
 ### Week 1:
 * Review theory for neural networks:
@@ -42,19 +42,21 @@ After reviewing and replicating the above results, a novel approach should be de
  + Review of graph convolutional neural networks.
 
 * Review of graph theory:
- + Graph embeddings
- + Numerical techniques related to adjacency matrices.
  + Convolutions and applications to graph theory.
 
 * Tensorflow refresher with exercises:
- + Tensorflow ML exercise #1: Fit nested linear regression.
- + Tensorflow ML exercise #2: Fit 2 stage migration matrix model.
- + Basic visualization/classification tasks on graphs.
+ + Review graph structure, programming framework for TensorFlow.
+ + Review backpropogation.
+ + Tensorflow ML exercise #1: Solve unconstrained optimization problem.
+ + Tensorflow ML exercise #2: Solve constrained optimization problem.
+ + Tensorflow ML exercise #3: Fit linear regression from scratch, fit "two-stage" linear regression.
+ + Employ simple machine learning on the graph structure to try to group data.
+
 
 * Assigned Reading:
  + Read Link Based Learning - Lu Getoor - 2003
- + Read Hammond paper on spectral graph theory *with* intention of identifying key points, not completeness.
- + Employ simple machine learning on the graph structure to try to group data.
+ + Read paper introducing Node2Vec
+ + Review graph database methods.
 
 ### Week 2:
 1. Read Semi-Supervised Classification on Graph Convolutional Networks - Kipf Welling - 2017.
