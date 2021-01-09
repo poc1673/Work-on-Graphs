@@ -27,24 +27,21 @@ After reviewing and replicating the above results, a novel approach should be de
 
 | Week # | Begin Date | Topic | Items Due |   
 |------------|----------------------|-------|-----------|
-| 1|  2021-01-10         |         | Graph theory/Tensorflow review      |           |   
-| 2|  2021-01-18         |          | Convolutional neural networks and graph theory      |           |   
-| 3|  2021-01-26          |          |    Manifold propogation   |           |   
-| 4|  2021-02-02          |          |  Skip-gram graph embeddings (DeepWalk)     |           |   
+| 1|  2021-01-10         |    Refresher     | Graph theory/Tensorflow review      |           |   
+|2|  2021-02-02          |    Node embedding methods      |  Skip-gram graph embeddings (DeepWalk)     |           |   
+| 3|  2021-01-18         |    GCN and neural network based methods      | Convolutional neural networks and graph theory      |           |   
+| 4|  2021-01-26          |          |    Manifold propogation   |           |   
 | 5|  2021-02-10          |          |   FAST CGN Replication    |           |   
 |6|  2021-02-18          |          | Create novel model.       |           |   
 |7 | 2021-02-26          |          | Generate writeup on results.       |           |
 
 ### Week 1:
-* Review theory for neural networks:
+**Review theory for neural networks:**
  + Basic principles of neural networks.
  + Structure of networks (RNN, et cetera).
  + Review of graph convolutional neural networks.
 
-* Review of graph theory:
- + Convolutions and applications to graph theory.
-
-* Tensorflow refresher with exercises:
+**Tensorflow refresher with exercises:**
  + Review graph structure, programming framework for TensorFlow.
  + Review backpropogation.
  + Tensorflow ML exercise #1: Solve unconstrained optimization problem.
@@ -52,11 +49,15 @@ After reviewing and replicating the above results, a novel approach should be de
  + Tensorflow ML exercise #3: Fit linear regression from scratch, fit "two-stage" linear regression.
  + Employ simple machine learning on the graph structure to try to group data.
 
-
-* Assigned Reading:
- + Read Link Based Learning - Lu Getoor - 2003
- + Read paper introducing Node2Vec
- + Review graph database methods.
+#### Resources:
+* [node2vec: Embeddings for Graph Data
+](https://towardsdatascience.com/node2vec-embeddings-for-graph-data-32a866340fef)
+* [Stellargraph Example of Node2Vec](https://stellargraph.readthedocs.io/en/v1.0.0rc1/demos/node-classification/node2vec/stellargraph-node2vec-weighted-random-walks.html)
+* [node2vec: Scalable Feature Learning for Networks](https://arxiv.org/abs/1607.00653)
+* [How to get started with machine learning on graphs](https://medium.com/octavian-ai/how-to-get-started-with-machine-learning-on-graphs-7f0795c83763)
+* [Octavian Machine Learning on Graphs Course](https://octavian.ai/machine-learning-on-graphs-course.html)
+* [Deep Learning with Python: Chapters 2 and 3](https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438/ref=sr_1_1?dchild=1&keywords=francois+chollet&qid=1608392039&sr=8-1)
+* [Cora Data-set](https://www.google.com/search?q=cora+dataset&oq=cora+dataset&aqs=chrome..69i57j69i60l3j35i39j0.2535j0j1&sourceid=chrome&ie=UTF-8)
 
 ### Week 2:
 1. Read Semi-Supervised Classification on Graph Convolutional Networks - Kipf Welling - 2017.
