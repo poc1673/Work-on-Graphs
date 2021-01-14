@@ -28,9 +28,9 @@ After reviewing and replicating the above results, a novel approach should be de
 | Week # | Begin Date | Topic | Items Due |   
 |------------|----------------------|-------|-----------|
 | 1|  2021-01-10         |    Refresher     | Graph theory/Tensorflow review      |           |   
-|2|  2021-02-02          |    Node embedding methods      |  Skip-gram graph embeddings (DeepWalk)     |           |   
-| 3|  2021-01-18         |    GCN and neural network based methods      | Convolutional neural networks and graph theory      |           |   
-| 4|  2021-01-26          |          |    Manifold propogation   |           |   
+|2|    2021-01-18           |    Node embedding methods      |  Skip-gram graph embeddings (DeepWalk)     |           |   
+| 3|   2021-01-26        |    GCN and neural network based methods      | Convolutional neural networks and graph theory      |           |   
+| 4|  2021-02-02 |          |    Manifold propogation   |           |   
 | 5|  2021-02-10          |          |   FAST CGN Replication    |           |   
 |6|  2021-02-18          |          | Create novel model.       |           |   
 |7 | 2021-02-26          |          | Generate writeup on results.       |           |
@@ -46,7 +46,7 @@ After reviewing and replicating the above results, a novel approach should be de
  + Review backpropogation.
  + Tensorflow ML exercise #1: Solve unconstrained optimization problem.
  + Tensorflow ML exercise #2: Solve constrained optimization problem.
- + Tensorflow ML exercise #3: Fit linear regression from scratch, fit "two-stage" linear regression.
+ + Tensorflow ML exercise #3: Fit linear regression from scratch.
  + Employ simple machine learning on the graph structure to try to group data.
 
 #### Resources:
@@ -82,20 +82,19 @@ After reviewing and replicating the above results, a novel approach should be de
 
 
 ### Week 4:
-
+* Read FASTCGN implementation paper.
+* Implement changes from FASTCGN onto original GCNN functions to create fast versions.
+* Attempt to replicate results from both papers.
 
 
 
 
 ### Week 5:
 
-* Read FASTCGN implementation paper.
-* Implement changes from FASTCGN onto original GCNN functions to create fast versions.
-* Attempt to replicate results from both papers.
+
 
 ### Week 6:
 
-To reassess steps.
 
 
 ### Week 7:
@@ -110,7 +109,10 @@ Ending: 2021-02-28
 
 ## Resources
 
-### Graph Theory
+### Graph Theory and Tools
+
+To add
+
 
 ### Deep Learning
 1. [Tensorflow 2.0 Website](https://www.tensorflow.org/guide/effective_tf2)
@@ -121,3 +123,5 @@ Ending: 2021-02-28
 ## Data-sets
 1. [Karate club data-set](http://networkrepository.com/soc-karate.php)
 2. [Elliptic data-set](https://www.kaggle.com/ellipticco/elliptic-data-set)
+3. [Cora Data-set](https://relational.fit.cvut.cz/dataset/CORA)
+4. [Bitcoin Alpha trust weighted signed network](https://snap.stanford.edu/data/soc-sign-bitcoin-alpha.html)
